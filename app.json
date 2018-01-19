@@ -1,0 +1,22 @@
+{
+  "pages":[
+    
+    "pages/lists/lists",
+    "pages/near/near",    
+    "pages/detail/detail",
+    "pages/map/map",    
+    "pages/search/search",
+    "pages/district/district",
+    "pages/around/around"
+        
+        
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "凤凰飞镖店铺地图",
+    "navigationBarTextStyle": "white"
+  },
+  "networkTimeout": {
+    "request": 5000
+  }
+}
