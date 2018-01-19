@@ -63,8 +63,8 @@ Page({
       duration: 20000
     })
     var PMap = new pmap.PMapWX({
-      ak: '71a4cd93ba3ba92ccba2161aebbca865',
-      tableid: '55273bf0e4b0bfcd7f2ad09e'
+      ak: '71a4cd93ba3ba92ccba2161ae*******',
+      tableid: '55273bf0e4b0bfcd7f*******'
     });
 
     var fail = function (data) {
