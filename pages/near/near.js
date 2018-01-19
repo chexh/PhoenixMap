@@ -33,7 +33,7 @@ Page({
     var detail = JSON.parse(options.detail);
     center = detail.latitude + ',' + detail.longitude;    
     qqmapsdk = new QQMapWX({
-      key: 'UMFBZ-3D4HW-H5JRD-RSAOE-5LWWZ-HWBAC'
+      key: 'UMFBZ-3D4HW-H5JRD-RSAOE-5LWWZ-*****'
     });
     wx.showToast({
       title: '加载中',
