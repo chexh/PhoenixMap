@@ -58,8 +58,8 @@ Page({
       });
     }  
     var PMap = new pmap.PMapWX({
-      ak: '71a4cd93ba3ba92ccba2161aebbca865',
-      tableid:'55273bf0e4b0bfcd7f2ad09e'
+      ak: '71a4cd93ba3ba92ccba2161*******',
+      tableid:'55273bf0e4b0bfcd7*******'
     });
     var fail = function (data) {
       console.log(data)
