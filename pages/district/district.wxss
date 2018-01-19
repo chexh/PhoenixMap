@@ -1,0 +1,98 @@
+.icon{
+  margin-left: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.select{
+  width: 100%;
+  top: 0;
+  height: 100%;
+  position: absolute;
+  background: white;
+  overflow: hidden; 
+  display: flex;
+  display: -webkit-flex;
+  flex-direction:column;
+    
+}
+.close{    
+  padding: 20rpx 40rpx;
+  border-bottom: 1px solid #ddd;
+  background: #fafbfb;
+  display: flex;
+  display: -webkit-flex;
+  align-items:center;
+  /* background-color: #ddd; */
+  flex: none;
+}
+.location{
+  padding: 20rpx 40rpx;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+  font-family: "华文细黑";
+  display: flex;
+  display: -webkit-flex;
+  align-items:center;
+  flex: none;
+}
+.gps{
+  color: #BBB6AD;
+  display: inline-block;
+  margin-left: 10rpx;
+  vertical-align: bottom;
+  margin-bottom: -1px;
+  font-size: 14px;
+}
+.area{
+  display: flex;
+  display: -webkit-flex;
+  flex-flow:row nowrap;
+}
+.province{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction:column;   
+  width: 33%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.plist{
+  flex:1 0 100rpx;
+  display: flex;
+  display: -webkit-flex;
+  align-items:center;
+  padding-left: 40rpx;
+  font-size: 15px;
+  font-family: "华文黑体";
+  border-bottom: 1px solid #dddddd; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+.clist{
+  display: flex;
+  display: -webkit-flex;
+  flex:0 0 100rpx;
+  align-items:center; 
+  padding-left: 40rpx;
+  font-size: 15px;
+  font-family: "华文黑体";
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+.city{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction:column;
+  width: 33%;
+  background: #F7F7F7;
+  overflow-y: auto;
+  overflow-x: hidden; 
+}
+.district{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction:column;  
+  width: 33%;
+  overflow-y: auto;
+  overflow-x: hidden; 
+}

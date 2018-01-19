@@ -1,0 +1,39 @@
+page,
+.page,
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-navbar{
+  background: #fff;
+}
+.weui-tab__content{
+ display: flex;
+ display: -webkit-flex;
+ flex-direction: column;
+ flex: 0 0 auto; 
+}
+.list{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  padding: 20rpx 30rpx;
+  border-bottom: 1px solid #ccc;
+}
+.title{
+ color: #000;
+}
+.address{
+ color: #ababab;
+ font-size: 30rpx;
+}
+.distance{
+  color:#1aad19;
+  font-size: 30rpx; 
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;  
+  justify-content:flex-end;
+}

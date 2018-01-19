@@ -1,0 +1,40 @@
+<view class="page">     
+  <view wx:if="{{!markers.picurl}}" class="section__ctn">
+    <image class="image1" mode="aspectFit" src="../../resources/shop.jpg"></image>
+  </view>
+  <view wx:else class="section__ctn">
+    <image class="image1" mode="aspectFit" src="{{markers.picurl}}"></image>
+  </view>
+<view class="title">
+  <view class="name">{{markers.shopname}}</view>
+  <!-- <view style="color:#999;font-size:26rpx;margin-top:20rpx">店铺</view> -->
+  <view class="gohere" bindtap="daohang" id="{{markers.id}}">
+    <image class="goicon" src='../../resources/index_gohere.png'></image>
+  </view>
+</view>
+<view>
+  <image bindtap="daohang" style='width:100%;margin-top:10rpx;height:300rpx' mode="center" src='http://apis.map.qq.com/ws/staticmap/v2/?key=N3RBZ-GFIRX-JIE4P-ZC2ZE-QOMPF-LVFIB&size=400x300&scale=1&center={{markers.latitude}},{{markers.longitude}}&&markers=color:red|label:1|size:large|{{markers.latitude}},{{markers.longitude}}&zoom=15'></image>
+</view>
+<view class="more" >
+  <view class="more_d">
+    <image style='width:40rpx;height:52rpx;flex:0 0 auto' src='../../resources/detail_address.png'></image>
+    <text style="margin-left:20rpx;font-size:34rpx">{{markers.address}}</text>
+  </view>
+  <view class="more_d">
+    <image style='width:40rpx;height:52rpx;flex:0 0 auto' src='../../resources/detail_telephone.png'></image>
+    <text class='tel'>{{markers.telephone}}</text>
+  </view>
+</view>
+<view class="near" bindtap='nearby'>
+  <text style='width:700rpx'>店铺附近公交地铁站</text> 
+  <image style='width:32rpx;height:56rpx;flex:0 0 auto;' src='../../resources/detail_arrow.png'></image>
+</view>
+<view style='margin-top:30rpx;' bindtap='getchange'>
+  <button style='width:200rpx;' hidden="true" type="warn">纠错</button>
+</view>
+  <view class="page__bd page__bd_spacing" style='margin-top:100rpx;padding:50rpx'>
+      <view class="weui-footer">
+          <view class="weui-footer__text">Copyright © 2018 凤凰飞镖</view>
+      </view>
+  </view>
+</view>

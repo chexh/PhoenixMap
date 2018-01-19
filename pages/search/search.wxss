@@ -1,0 +1,21 @@
+.searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+    display: none;
+}
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+}
+.icon{
+  margin-left: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.btn{
+    padding-top: 40rpx;
+    display: flex;
+    display: -webkit-flex;
+    /* margin: 0 auto;       */
+}

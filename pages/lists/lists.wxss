@@ -1,0 +1,55 @@
+/** 修改默认的navigator点击态 **/
+.navigator-hover {
+    color:blue;
+}
+.active{
+  border-bottom: 2px solid #0091ff;
+  background: #f1f1f1;
+  font-weight: bold;
+  color:#3b3b3b;
+}
+.list_top{
+position: fixed;
+width: 100%;
+top:0;
+z-index: 100;
+display: -webkit-flex; /* Safari */
+display: flex;
+height: 80rpx;
+align-items:center;
+border-bottom: 1rpx ridge #ccc; 
+background: #fff;
+opacity:1;
+}
+.top{
+  width: 25%; 
+  height: 80rpx;
+  display: -webkit-flex; /* Safari */
+  display: flex;  
+  align-items:center;
+  justify-content:center;   
+  border-right: 1rpx solid #ccc;    
+}
+.icon{
+  margin-left: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.list_container{
+  position: absolute; 
+  height: 100%;
+  width: 100%;
+}
+.weui-panel__hd::after {
+  left:0;
+}
+.weui-media-box {
+  padding:10px 15px;
+}
+.weui-media-box__hd_in-appmsg{
+  width:160rpx;
+  height:120rpx;
+ }
+.weui-panel__hd{
+  padding:100rpx 30rpx 20rpx;
+}

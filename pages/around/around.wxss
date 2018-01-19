@@ -1,0 +1,6 @@
+.btn{
+    padding-top: 40rpx;
+    display: flex;
+    display: -webkit-flex;
+    /* margin: 0 auto;       */
+}

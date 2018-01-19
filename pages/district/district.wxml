@@ -1,0 +1,27 @@
+<view class='select'>
+  <!-- <view class='close'>
+     <navigator open-type="navigateBack" hover-class="navigator-hover"><image class='icon' src='../../resources/back.png'></image></navigator>
+  </view> -->
+  <view class='location' hidden='ture'>
+      <text >广州市</text>
+      <text class='gps' >GPS定位</text>
+  </view>
+  <view class='area'>
+    <view class='province'>
+       <text class='plist' bindtap="alltap">全国</text> 
+        <block wx:for="{{province}}" wx:key="id">          
+           <text style="{{item.style}}" class='plist' bindtap="provincetap" id="{{item.id}}">{{item.name}}</text> 
+        </block> 
+    </view>
+    <view class='city' >
+        <block wx:for="{{city}}" wx:key="id">          
+           <text style="{{item.style}}" class='clist' bindtap="citytap" id="{{item.id}}">{{item.name}}</text> 
+        </block> 
+    </view>
+    <view class='district'>
+        <block wx:for="{{district}}" wx:key="id">          
+           <text style="{{item.style}}" class='clist' bindtap="districtap" id="{{item.id}}">{{item.name}}</text> 
+        </block> 
+    </view>
+  </view>
+</view>

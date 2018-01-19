@@ -1,0 +1,73 @@
+.page{
+  background: #F1F1F1;
+}
+.section__ctn{ 
+  text-align: center;
+}
+.image1{
+  width: 750rpx; 
+  height: 562.5rpx; 
+}
+.title{
+  position: relative;
+  margin-top: -15%;
+  background-color: #ccc; 
+  background: -webkit-linear-gradient(180deg,rgba(255,255,255,.8)0,rgba(255,255,255,.92)21%,rgba(255,255,255,.95)30%,rgba(255,255,255,.98)50%,rgba(255,255,255,.95));
+  background: linear-gradient(180deg,rgba(255,255,255,.8)0,rgba(255,255,255,.92)21%,rgba(255,255,255,.95)30%,rgba(255,255,255,.98)50%,rgba(255,255,255,.95));
+  padding: 26rpx 30rpx 28rpx;
+  
+}
+.name{
+    color: #000;
+    font-size: 46rpx;
+    line-height: 1.15;
+}
+.gohere{
+    position: absolute;
+    border-radius: 50%;
+    top: -57rpx;
+    right: 30rpx;
+    width: 114rpx;
+    height: 114rpx;
+    text-align: center;    
+    background: #0091ff; 
+    /* background-size: 34rpx 40rpx; */
+}
+.gohere::after{
+    content: "去这里";
+    font-size: 24rpx;
+    color: #fff;
+    position: absolute;
+    bottom: 20rpx;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.goicon{
+  margin-top:20rpx;  
+  height: 39rpx;
+  width: 33rpx;
+}
+.more{
+  display: -webkit-flex;
+  display: flex;
+  flex-direction:column;
+}
+.more_d{
+  display: -webkit-flex;
+  display: flex;
+  align-items:center;
+  padding: 20rpx 30rpx; 
+  background: #fff;  
+}
+.near{
+  display: -webkit-flex;
+  display: flex;
+  padding:30rpx 30rpx;
+  background:#fff;
+  margin-top:30rpx;  
+}
+.tel{
+  margin-left:20rpx;
+  font-size:34rpx;
+}

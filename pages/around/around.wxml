@@ -1,0 +1,28 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-cells__title">附近</view>
+        <view class="weui-cells weui-cells_after-title">
+            <navigator open-type="reLaunch" url="../lists/lists?radius=1000" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">1km</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+            <navigator open-type="reLaunch" url="../lists/lists?radius=5000" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">5km</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>            
+            <navigator open-type="reLaunch" url="../lists/lists?radius=10000" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">10km</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+            <navigator open-type="reLaunch" url="../lists/lists?radius=50000" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">50km</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>                       
+        </view>
+    </view>
+    <navigator open-type="navigateBack" hover-class="navigator-hover">
+        <view class='btn'>          
+            <button type="warn" size='mini'>返回</button>          
+        </view>
+    </navigator>   
+</view>     

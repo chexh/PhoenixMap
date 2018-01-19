@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class='map_top'>
+  <navigator class="top {{active.around}}" url="../around/around?t=map" hover-class="navigator-hover"><text>附近</text><image class='icon' src='../../resources/around.png'></image></navigator>
+  <navigator class="top {{active.district}}" url="../district/district?t=map" hover-class="navigator-hover"><text>地区</text><image class='icon' src='../../resources/down.png'></image></navigator>
+  <navigator class="top {{active.search}}" url="../search/search?t=map" hover-class="navigator-hover"><text>搜索</text><image class='icon' src='../../resources/search.png'></image></navigator>
+  <navigator open-type="redirect" class='top' url="../lists/lists?tag=1&active={{active.on}}&title={{title}}"><text>列表</text><image class='icon' src='../../resources/list.png'></image></navigator>
+</view>
+<view class="map_container">
+  <map class="map" id="map" controls="{{controls}}" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" show-location="true" markers="{{markers}}" bindmarkertap="markertap" bindcontroltap="controltap" bindregionchange="regionchange"></map>
+</view>
+
+<swiper current="{{id}}" bindchange="swiperchange">
+  <block wx:for="{{markers}}" wx:key="id">
+    <swiper-item>
+      <view class='bottom'>
+        <view class="map_text" bindtap="detailtap" id='{{index}}'>
+            <text class="h1">{{item.shopname}}</text>
+            <text class="detail">{{item.address}}</text>        
+        </view>
+        <view class='map_road' bindtap="roadtap" id="{{id}}">       
+           <image class='road' src='../../resources/road.png'></image>
+        </view> 
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
