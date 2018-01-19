@@ -17,8 +17,8 @@ Page({
   onLoad: function (options) {
     var that = this;
     var PMap = new pmap.PMapWX({
-      ak: '71a4cd93ba3ba92ccba2161aebbca865',
-      tableid: '55273bf0e4b0bfcd7f2ad09e'
+      ak: '71a4cd93ba3ba92ccba2161aeb',
+      tableid: '55273bf0e4b0bfcd7f'
     });
     if (wx.getSetting){
     wx.getSetting({
@@ -157,8 +157,8 @@ Page({
   showCity: function (id,province){
     var that = this;
     var PMap = new pmap.PMapWX({
-      ak: '71a4cd93ba3ba92ccba2161aebbca865',
-      tableid: '55273bf0e4b0bfcd7f2ad09e'
+      ak: '71a4cd93ba3ba92ccba2161aebb',
+      tableid: '55273bf0e4b0bfcd7f2'
     });
     var cfail = function (data) {
       wx.hideNavigationBarLoading(); 
@@ -190,8 +190,8 @@ Page({
   showDistrict: function (id, province,city) {
     var that = this;
     var PMap = new pmap.PMapWX({
-      ak: '71a4cd93ba3ba92ccba2161aebbca865',
-      tableid: '55273bf0e4b0bfcd7f2ad09e'
+      ak: '71a4cd93ba3ba92ccba2161aeb',
+      tableid: '55273bf0e4b0bfcd7f2'
     });
     var dfail = function (data) {
       console.log(data)
